@@ -20,7 +20,7 @@ def display_statistics(data):
   print(f"Total Deaths: {data['deaths']}")
 
 def main():
-  region = input("Enter the region (country, state, or city): ")
+  region = input("Enter the region (country): ")
   covid_data = fetch_covid_data(region)
 
   if isinstance(covid_data, dict):
